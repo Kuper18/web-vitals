@@ -33,6 +33,7 @@ const ImageSlider = () => {
           <Button
             onClick={handlePrevSlide}
             className="bg-background hover:bg-background/90 size-8 rounded-full"
+            aria-label="Show previous image slide"
           >
             <ChevronLeft className="text-foreground size-4.5" />
           </Button>
@@ -40,15 +41,16 @@ const ImageSlider = () => {
           <Button
             onClick={handleNextSlide}
             className="bg-background hover:bg-background/90 size-8 rounded-full"
+            aria-label="Show next image slide"
           >
             <ChevronRight className="text-foreground size-4.5" />
           </Button>
         </div>
 
         <div>
-          <h3 className="mb-2 text-[13px] font-bold tracking-[3px] uppercase">
+          <p className="mb-2 text-[13px] font-bold tracking-[3px] uppercase">
             Intro
-          </h3>
+          </p>
           <p className="text-sm">
             By the same illusion which lifts the <br /> horizon.
           </p>
