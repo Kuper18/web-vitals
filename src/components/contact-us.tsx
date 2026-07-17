@@ -50,18 +50,21 @@ const ContactUs = () => {
             <Link
               href="https://www.linkedin.com/in/oleh-kuper-939a432a2/"
               className="text-secondary hover:text-accent"
+              aria-label="Navigate to facebook"
             >
               <Facebook className="[&_path]:fill-current" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/oleh-kuper-939a432a2/"
               className="text-secondary hover:text-accent"
+              aria-label="Navigate to twitter"
             >
               <Twitter className="[&_path]:fill-current" />
             </Link>
             <Link
               href="https://www.linkedin.com/in/oleh-kuper-939a432a2/"
               className="text-secondary hover:text-accent"
+              aria-label="Navigate to instagram"
             >
               <Instagram className="[&_path]:fill-current" />
             </Link>

@@ -16,8 +16,11 @@ const MenuButton = () => {
 
   return (
     <Drawer open={open} onOpenChange={setOpen} direction="left">
-      <DrawerTrigger className="lg:hidden" asChild>
-        <Menu />
+      <DrawerTrigger asChild>
+        <button className="cursor-pointer lg:hidden">
+          <Menu />
+          <span className="sr-only">Open side bar menu</span>
+        </button>
       </DrawerTrigger>
 
       <DrawerContent>
