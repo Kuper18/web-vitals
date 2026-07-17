@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import { Open_Sans, Poppins } from 'next/font/google';
 
+import { GoogleTagManager } from '@next/third-parties/google';
+
 import './globals.css';
 
 const poppins = Poppins({
@@ -30,6 +32,7 @@ export default function RootLayout({
       className={`${poppins.variable} ${openSans.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">{children}</body>
+      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID!} />
     </html>
   );
 }
