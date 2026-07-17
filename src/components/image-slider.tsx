@@ -63,14 +63,14 @@ const ImageSlider = () => {
           transform: `translateX(-${currentSlide * 100}%)`,
         }}
       >
-        {images.map((image) => (
+        {images.map((image, index) => (
           <div key={image} className="relative h-full w-full shrink-0">
             <Image
-              fetchPriority="high"
+              fetchPriority={index === 0 ? 'high' : 'auto'}
               src={image}
               alt="hero image preview"
               fill
-              loading="eager"
+              loading={index === 0 ? 'eager' : 'lazy'}
               className="rounded-[30px] object-cover sm:rounded-none
                 sm:rounded-tl-[30px] sm:rounded-br-[30px]"
             />
